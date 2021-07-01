@@ -1,0 +1,545 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 120px;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            background: #D0EFFF;
+
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 13%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background: #011C2D;
+        }
+
+        nav .logo {
+            padding: 22px 20px;
+            height: 80px;
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            position: fixed;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 5px 0;
+            background: #005F94;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+        }
+
+        ul li {
+            list-style: none;
+            text-align: center;
+            display: block;
+            border-right: 1px solid #fff;
+        }
+
+        ul li:last-child {
+            border-right: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 0 50px;
+            display: block;
+        }
+
+        ul li a .icon {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            /*background: #ccc;*/
+            overflow: hidden;
+            margin: 0 auto 5px;
+        }
+
+        ul li a .icon .fa {
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            font-size: 25px;
+            transition: 0.5s;
+            color: #fff;
+
+        }
+
+        ul li a .icon .fa:last-child {
+            color: #A5E0FF;
+        }
+
+        ul li a:hover .icon .fa {
+            transform: translateY(-100%);
+
+        }
+
+        ul li a .name {
+            position: relative;
+            height: 16px;
+            width: 100%;
+            display: block;
+            overflow: hidden;
+        }
+
+        ul li a .name span {
+            display: block;
+            position: relative;
+            color: #A5E0FF;
+            font-size: 15px;
+            line-height: 20px;
+            transition: 0.5s;
+
+
+        }
+
+        ul li a .name span:before {
+            content: attr(data-text);
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+        }
+
+        ul li a:hover .name span {
+            transform: translateY(20px);
+        }
+
+        .header {
+            padding-left: 40px;
+            padding-top: 10px;
+            background: #fff;
+            border-radius: 15px;
+            height: 15%;
+            text-align: left;
+            border-bottom: 5px solid #D0EFFF;
+            color: #011C2D;
+            text-transform: uppercase;
+        }
+
+        .row {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .row .col {
+            width: auto;
+            justify-content: center;
+        }
+
+        .row .col .post {
+            padding: 20px 10px;
+            background: #fff;
+            border-radius: 30px;
+            width: 100%;
+            margin: 5px;
+            border-bottom: 10px solid #D0EFFF;
+
+        }
+
+        .row .col .post .pic {
+            display: inline-block;
+            max-width: 190px;
+            width: 100%;
+            height: 190px;
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto;
+            padding: 5px;
+
+        }
+
+        .row .col .post:hover .pic {
+            background: #24b2ff;
+
+        }
+
+        .row .col .post:hover {
+            background: #8dd5ff;
+
+        }
+
+        .pic img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .post .title {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            color: #2e282a;
+            margin: 0 0 7;
+        }
+
+        .post span {
+            display: block;
+            font-size: 15px;
+
+            color: #0069a7;
+            margin-bottom: 0px;
+        }
+
+        .post span .a {
+
+            color: #17bebb;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                margin: 0;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: 'Montserrat', sans-serif;
+                background: #D0EFFF;
+
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 8%;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                background: #011C2D;
+            }
+
+            nav .logo {
+                padding: 10px 20px;
+                height: 40px;
+                float: left;
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            ul {
+                position: fixed;
+                top: 96%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+                padding: 5px 0;
+                background: #005F94;
+                display: flex;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+                width: 100%;
+            }
+
+            ul li {
+                list-style: none;
+                text-align: center;
+                display: block;
+                border-right: 0.5px solid #fff;
+            }
+
+            ul li:last-child {
+                border-right: none;
+            }
+
+            ul li a {
+                text-decoration: none;
+                padding: 1px 29px;
+                display: block;
+            }
+
+            ul li a .icon {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                /*background: #ccc;*/
+                overflow: hidden;
+                margin: 0 auto 0px;
+            }
+
+            ul li a .icon .fa {
+                width: 100%;
+                height: 100%;
+                line-height: 40px;
+                font-size: 25px;
+                transition: 0.5s;
+                color: #fff;
+
+            }
+
+            ul li a .icon .fa:last-child {
+                color: #A5E0FF;
+            }
+
+            ul li a:hover .icon .fa {
+                transform: translateY(-100%);
+
+            }
+
+            ul li a .name {
+                position: relative;
+                height: 2px;
+                width: 100%;
+                display: block;
+                overflow: hidden;
+            }
+
+            ul li a .name span {
+                display: block;
+                position: relative;
+                color: #A5E0FF;
+                font-size: 0px;
+                line-height: 20px;
+                transition: 0.5s;
+
+
+            }
+
+            ul li a .name span:before {
+                content: attr(data-text);
+                position: absolute;
+                top: -100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+            }
+
+            ul li a:hover .name span {
+                transform: translateY(20px);
+            }
+
+            .header {
+                padding-left: 0px;
+                padding-top: 45px;
+                background: #fff;
+                border-radius: 15px;
+                height: 0;
+                text-align: left;
+                border-bottom: 10px solid #D0EFFF;
+                color: #011C2D;
+                font-size: 0;
+                text-transform: uppercase;
+            }
+
+            .row {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .row .col {
+                width: 94%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .row .col .post {
+                padding: 20px 10px;
+                background: #fff;
+                border-radius: 30px;
+                width: 100%;
+                margin: 5px;
+                border-bottom: 10px solid #D0EFFF;
+
+            }
+
+            .row .col .post .pic {
+                display: inline-block;
+                max-width: 190px;
+                width: 100%;
+                height: 190px;
+                background: #fff;
+                border-radius: 50%;
+                margin: 0 auto;
+                padding: 5px;
+
+            }
+
+            .post .title {
+                display: block;
+                font-size: 18px;
+                font-weight: 600;
+                color: #2e282a;
+                margin: 0 0 7;
+            }
+
+            .post span {
+                display: block;
+                font-size: 13px;
+
+                color: #0069a7;
+                margin-bottom: 0px;
+            }
+
+            .post span .a {
+
+                color: #17bebb;
+                font-weight: 400;
+                font-size: 13px;
+            }
+
+
+        }
+    </style>
+
+<body>
+    <nav>
+        <div class="logo">Go Project</div>
+    </nav>
+    <ul>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+
+                <div class="name"><span data-text="Home">Home</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+
+                <div class="name"><span data-text="Search">Search</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                </div>
+
+                <div class="name"><span data-text="Applications">Applications</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+
+                <div class="name"><span data-text="notification">notification</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+
+                <div class="name"><span data-text="Profile">Profile</span></div>
+            </a>
+        </li>
+    </ul>
+    <div class="header">
+        <h2 class="title">Posts</h2>
+    </div>
+
+
+    </div>
+    <div class="main">
+
+        <div class="row">
+            <div class="col">
+                <div class="post">
+                    <div class="pic">
+                        <img src="https://res.cloudinary.com/jayu/image/upload/v1622032837/avtar3_ne5jvy.jpg" alt="">
+                    </div>
+                    <h5 class="title">Username: Project name</h5>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        la........<div class="a">
+                            <a href="#">Read more</a>
+                        </div></span>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="post">
+                    <div class="pic">
+                        <img src="https://res.cloudinary.com/jayu/image/upload/v1622032837/avtar3_ne5jvy.jpg" alt="">
+                    </div>
+                    <h5 class="title">Username: Project name</h5>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        la........<div class="a">
+                            <a href="#">Read more</a>
+                        </div></span>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="post">
+                    <div class="pic">
+                        <img src="https://res.cloudinary.com/jayu/image/upload/v1622032837/avtar3_ne5jvy.jpg" alt="">
+                    </div>
+                    <h5 class="title">Username: Project name</h5>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        la........<div class="a">
+                            <a href="#">Read more</a>
+                        </div></span>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="post">
+                    <div class="pic">
+                        <img src="avtar3.jpg" alt="">
+                    </div>
+                    <h5 class="title">Username: Project name</h5>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        la........<div class="a">
+                            <a href="#">Read more</a>
+                        </div></span>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="post">
+                    <div class="pic">
+                        <img src="avtar3.jpg" alt="">
+                    </div>
+                    <h5 class="title">Username: Project name</h5>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        la........<div class="a">
+                            <a href="#">Read more</a>
+                        </div></span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</head>
+
+</html>
