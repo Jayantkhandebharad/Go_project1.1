@@ -16,6 +16,7 @@ mongoose.connection.on("error", (err) => {
   console.log("error aali jk :", err);
 });
 
+
 require("./models/user");
 require("./models/post");
 
