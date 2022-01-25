@@ -1,5 +1,5 @@
 # Go_project1.1
-##Description
+##Description...
 
 The basic idea is to create a website to explore the completed or working projects in our campus. 
  Group of students working on differ domains can gather under the same roof through this website and contribute to their interested domain projects.  
