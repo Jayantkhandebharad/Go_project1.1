@@ -95,3 +95,13 @@ nav {
 .nav-wrapper {
   color: #011c2d !important;
 }
+
+@media (max-width: 768px) {
+  .two{
+    display:none;
+  }
+  
+  body{
+    background-color: #d0efff;  
+  }
+}

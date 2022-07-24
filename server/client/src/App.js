@@ -20,15 +20,14 @@ const Routing = () => {
 
     if (user) {
       dispatch({ type: "USER", payload: user });
+      history.push("/home")
     } else {
       history.push("/login");
     }
   }, []);
   return (
     <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
+      
       <Route path="/signup">
         <Signup />
       </Route>
@@ -48,6 +47,15 @@ const Routing = () => {
 
       <Route path="/OpenPost/:postid">
         <OpenPost />
+      </Route>
+      <Route exact path="/home">
+        <Home />
+      </Route>
+      <Route path="/">
+        <Login />
+      </Route>
+      <Route path="*">
+        <Login />
       </Route>
     </Switch>
   );

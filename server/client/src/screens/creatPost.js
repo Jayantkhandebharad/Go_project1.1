@@ -48,7 +48,7 @@ const CreatPost = () => {
               html: "posted successfully!!",
               classes: "#43a047 green darken-1",
             });
-            history.push("/");
+            history.push("/home");
           }
         })
         .catch((err) => {

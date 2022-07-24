@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
+import "./signup.css"
 
 import M from "materialize-css";
 
@@ -79,28 +80,32 @@ const Signup = () => {
   };
 
   return (
-    <div className="card mycard" style={{ margin: "20px auto" }}>
-      <h3> Go project </h3>
-      <div className="card auth-card input-field">
+    <div className="card mycard signup_outer">
+      
+      <div className="card auth-card input-field signup_form" >
         <input
+          className="input_field"
           type="text"
           placeholder="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
+          className="input_field"
           type="text"
           placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
+          className="input_field"
           type="text"
           placeholder="registration number"
           value={rig_id}
           onChange={(e) => setRig(e.target.value)}
         />
         <input
+          className="input_field"
           type="text"
           placeholder="password"
           value={password}

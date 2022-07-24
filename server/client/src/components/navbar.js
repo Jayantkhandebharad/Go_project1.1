@@ -33,7 +33,7 @@ const NavBar = () => {
     } else {
       return [
         <li key="6" ><Link to="/login">login</Link></li>,
-        <li key="7"><Link to="/signup">signup</Link></li>
+        // <li key="7"><Link to="/signup">signup</Link></li>
 
       ]
     }
@@ -58,7 +58,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className="nav-wrapper #01579b light-blue darken-4" style={{ margin: "0px" }}>
-        <Link to={state ? "/" : "/login"} className="brand-logo left" style={{ color: "white", fontWeight: "bold" }}>Go Project</Link>
+        <Link to={state ? "/home" : "/login"} className="brand-logo left" style={{ color: "white", fontWeight: "bold" }}>Go Project</Link>
         <ul id="nav-mobile" className="right">
           {renderList()}
 

@@ -2,7 +2,7 @@
     "name": "client",
     "version": "0.1.0",
     "private": true,
-    "proxy": "http://localhost:5001",
+    
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.10",
         "@testing-library/react": "^11.2.6",
@@ -27,6 +27,10 @@
             "react-app",
             "react-app/jest"
         ]
+    },
+    "engines": {
+        "node": "12.22.9",
+        "npm": "8.5.1"
     },
     "browserslist": {
         "production": [

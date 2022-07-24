@@ -35,13 +35,13 @@ section {
 section .imgbx {
   position: relative;
   width: 50%;
-  height: 100%;
+  height: 50vw;
 }
 
 section .imgbx img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 50vw;
   left: 0;
   top: 0;
 
@@ -181,5 +181,8 @@ section .contentbx .formbx .a {
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
+  }
+  section .two{
+    display:none;
   }
 }

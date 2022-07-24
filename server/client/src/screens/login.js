@@ -3,6 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import { UserContext } from "../App";
 import M from "materialize-css";
 
+
 const Login = () => {
   const { state, dispatch } = useContext(UserContext);
   const history = useHistory();
@@ -46,7 +47,7 @@ const Login = () => {
             html: "signnedin successfully!!",
             classes: "#43a047 green darken-1",
           });
-          history.push("/");
+          history.push("/home");
         }
       })
       .catch((err) => {
@@ -54,7 +55,10 @@ const Login = () => {
       });
   };
   return (
-    <div class="outer" >
+    <div class="outer" 
+    style={{
+      height:"48vw",
+    }}>
       <div
         class="one"
         style={{
@@ -86,8 +90,12 @@ const Login = () => {
           </button>
         </div>
       </div>
-      <div class="two">
-        <img src="https://res.cloudinary.com/jayu/image/upload/v1621873855/image_l904si.jpg" />
+      <div className="two">
+        <img src="https://res.cloudinary.com/jayu/image/upload/v1621873855/image_l904si.jpg" 
+        style={{
+          height:"48vw",
+        }}
+        />
       </div>
     </div>
   );
