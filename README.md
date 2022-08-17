@@ -18,25 +18,52 @@ from mentors in their project like how to proceed ,what knowledge is needed ,wha
 ### Screenshots:
 
 <img
-  src="https://res.cloudinary.com/jayu/image/upload/v1660758959/Screenshot_from_2022-08-17_23-20-50_yfss1t.png"
+  src="https://res.cloudinary.com/jayu/image/upload/v1660759828/Screenshot_from_2022-08-17_23-20-50_e2ztok.png"
   alt="Login page"
   title="Login page Go project"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
   <img
-  src="https://res.cloudinary.com/jayu/image/upload/v1660758959/Screenshot_from_2022-08-17_23-21-24_crml0w.png"
+  src="https://res.cloudinary.com/jayu/image/upload/v1660759828/Screenshot_from_2022-08-17_23-21-24_caraoa.png"
   alt="Login page"
   title="Login page Go project"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
   <img
-  src="https://res.cloudinary.com/jayu/image/upload/v1660758959/Screenshot_from_2022-08-17_23-21-58_da1s51.png"
+  src="https://res.cloudinary.com/jayu/image/upload/v1660759828/Screenshot_from_2022-08-17_23-21-58_gvvxmq.png"
   alt="Login page"
   title="Login page Go project"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
   <img
-  src="https://res.cloudinary.com/jayu/image/upload/v1660758958/Screenshot_from_2022-08-17_23-22-17_z40ui0.png"
+  src="https://res.cloudinary.com/jayu/image/upload/v1660759828/Screenshot_from_2022-08-17_23-22-17_qwolfj.png"
   alt="Login page"
   title="Login page Go project"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+
+## To Run Project:
+
+### cloning directory:
+```git clone https://github.com/Jayantkhandebharad/Go_project1.1.git```
+
+### moving inside directory:
+```cd Go_project1.1```
+
+### moving inside server directory:
+```cd server```
+
+### open second instance of your cmd in same directory and go inside client:
+```cd client```
+
+### install npm package in both the cmds:
+```npm install```
+
+
+### Then change the mongodb address inside keys.js file -give your own collections address by making instance on mongodb atlas, you will find keys.js at server\congig\keys.js
+
+### In cmd of server start nodejs server:
+```nodemon app```
+
+### In cmd of client start react server:
+```npm start```
